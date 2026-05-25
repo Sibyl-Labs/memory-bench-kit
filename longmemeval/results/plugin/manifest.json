@@ -1,0 +1,33 @@
+{
+  "run_id": "v4-20260522T204716Z-11b1fb89",
+  "timestamp_utc": "2026-05-22T20:47:16Z",
+  "model": "claude-sonnet-4-5",
+  "rail": "anthropic + sibyl plugin",
+  "total_in_sample": 500,
+  "already_done_at_start": 0,
+  "questions_to_run": 500,
+  "concurrency": 3,
+  "config": {
+    "max_tool_rounds": 4,
+    "prefetch_limit": 10,
+    "search_default_limit": 25,
+    "list_default_limit": 100,
+    "inter_call_delay_sec": 1.5,
+    "max_retries": 5
+  },
+  "versions": {
+    "python": "3.12.3",
+    "platform": "Linux-6.17.0-1012-aws-x86_64-with-glibc2.39",
+    "anthropic_sdk": "0.104.1",
+    "sibyl_memory_hermes": "0.3.5",
+    "sibyl_memory_client": "0.4.2"
+  },
+  "prompts": {
+    "extraction_system_sha": "8166670bd0919b6b",
+    "answer_system_template_sha": "a94a6561ea3f6a0c"
+  },
+  "scorer": {
+    "expected": "scripts/bench/longmemeval-score.mjs (v2: substring + abstention + pronoun + number + paraphrase)",
+    "convention": "single-session-preference excluded from overall (LongMemEval paper convention)"
+  }
+}
