@@ -1,0 +1,45 @@
+{
+  "scorer": "v2 (substring + abstention + pronoun + number + paraphrase; pre-fix)",
+  "context": "INITIAL scoring before the splitGold() fix landed in v3. Shipped here for full transparency about the scorer evolution. The hypotheses are identical; the scoring delta is purely the v2 false-negative rate on the LongMemEval temporal-reasoning multi-alternative gold format.",
+  "result": {
+    "total_records": 500,
+    "valid_ex_pref": 470,
+    "correct_ex_pref": 414,
+    "overall_acc_ex_pref": 0.881,
+    "raw_incl_all": 0.84
+  },
+  "per_category_v2": {
+    "knowledge-update": {
+      "score": 73,
+      "of": 78,
+      "pct": 0.936
+    },
+    "multi-session": {
+      "score": 121,
+      "of": 133,
+      "pct": 0.91
+    },
+    "single-session-assistant": {
+      "score": 55,
+      "of": 56,
+      "pct": 0.982
+    },
+    "single-session-user": {
+      "score": 68,
+      "of": 70,
+      "pct": 0.971
+    },
+    "temporal-reasoning": {
+      "score": 97,
+      "of": 133,
+      "pct": 0.729,
+      "note": "this is the false-negative-heavy category \u2014 see v3 for corrected 97.0%"
+    },
+    "single-session-preference": {
+      "score": 6,
+      "of": 30,
+      "pct": 0.2
+    }
+  },
+  "v3_recovery": "+33 answers (+7.0pp overall, +24.1pp on temporal-reasoning) via splitGold()"
+}

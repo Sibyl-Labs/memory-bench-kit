@@ -1,0 +1,76 @@
+{
+  "scorer": "v3 (substring + abstention + pronoun + number + paraphrase + multi-alt-gold-split)",
+  "scorer_source": "longmemeval-score.mjs (published alongside)",
+  "result": {
+    "total_records": 500,
+    "valid_ex_pref": 470,
+    "correct_ex_pref": 447,
+    "overall_acc_ex_pref": 0.951,
+    "raw_incl_all": 0.906
+  },
+  "per_category": {
+    "knowledge-update": {
+      "score": 73,
+      "of": 78,
+      "pct": 0.936
+    },
+    "multi-session": {
+      "score": 122,
+      "of": 133,
+      "pct": 0.917
+    },
+    "single-session-assistant": {
+      "score": 55,
+      "of": 56,
+      "pct": 0.982
+    },
+    "single-session-user": {
+      "score": 68,
+      "of": 70,
+      "pct": 0.971
+    },
+    "temporal-reasoning": {
+      "score": 129,
+      "of": 133,
+      "pct": 0.97
+    },
+    "single-session-preference": {
+      "score": 6,
+      "of": 30,
+      "pct": 0.2,
+      "note": "excluded from overall per LongMemEval convention"
+    }
+  },
+  "run_config": {
+    "run_id": "v4-20260522T204716Z-11b1fb89",
+    "model": "claude-sonnet-4-5",
+    "plugin": "sibyl-memory-hermes 0.3.5 + sibyl-memory-client 0.4.2 (PyPI)",
+    "rail": "anthropic native API",
+    "concurrency": 3,
+    "wall_clock_seconds": 5093.3,
+    "cost_usd": 43.78,
+    "cost_per_question_usd": 0.0876,
+    "tokens": {
+      "total_input": 9950874,
+      "total_output": 928823,
+      "tool_calls": 292
+    },
+    "errored_records": 0
+  },
+  "comparison": {
+    "published_opus_ceiling_2026_04_15": {
+      "score": 0.956,
+      "method": "verbatim journal + Claude file-Read access",
+      "model": "claude-opus-4-6"
+    },
+    "published_sonnet_ceiling_2026_04_15": {
+      "score": 0.936,
+      "method": "verbatim journal + Claude file-Read access",
+      "model": "claude-sonnet-4-6"
+    },
+    "plugin_v4_vs_opus": -0.005,
+    "plugin_v4_vs_sonnet": 0.015
+  },
+  "published_url": "https://blog.sibylcap.com/plugin-longmemeval",
+  "timestamp_utc": "2026-05-22T22:30:00Z"
+}

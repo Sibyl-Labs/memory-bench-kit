@@ -1,0 +1,39 @@
+{
+  "model": "sonnet",
+  "total_questions": 500,
+  "correct": 468,
+  "accuracy_pct": 93.6,
+  "by_type": {
+    "single-session-user": {
+      "correct": 70,
+      "total": 70,
+      "accuracy_pct": 100.0
+    },
+    "multi-session": {
+      "correct": 117,
+      "total": 133,
+      "accuracy_pct": 88.0
+    },
+    "knowledge-update": {
+      "correct": 75,
+      "total": 78,
+      "accuracy_pct": 96.2
+    },
+    "temporal-reasoning": {
+      "correct": 126,
+      "total": 133,
+      "accuracy_pct": 94.7
+    },
+    "single-session-assistant": {
+      "correct": 56,
+      "total": 56,
+      "accuracy_pct": 100.0
+    },
+    "single-session-preference": {
+      "correct": 24,
+      "total": 30,
+      "accuracy_pct": 80.0
+    }
+  },
+  "scored_at": "2026-04-15"
+}
